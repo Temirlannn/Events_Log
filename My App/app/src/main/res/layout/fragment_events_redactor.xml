@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAC613"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ED_Name_Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/ET_Description1_Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Краткое Описание"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:id="@+id/ED_Detail_Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Подробное Описание"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/ED_User_Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Пользовательская Заметка"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TV_Start_Event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Дата Начало Заметки"
+            android:inputType="date"
+            android:ems="1"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Tv_End_Editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:ems="1"
+            android:hint="Дата Окончания Заметки"
+            android:inputType="date"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Сохранить" />
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Назад" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

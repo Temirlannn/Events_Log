@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C316"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/ET_Description1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Краткое Описание"
+            android:textStyle="bold|italic"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/ET_Detail_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Подробное Описание"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/ED_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Пользовательская Заметка"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TV_Date_Start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="Дата Начало"
+                android:textSize="20dp"
+                android:textStyle="italic|bold"/>
+
+            <TextView
+                android:id="@+id/TV_Date_End"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="Дата Окончания"
+                android:textSize="20dp"
+                android:textStyle="italic|bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="Добавить" />
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="Назад" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
