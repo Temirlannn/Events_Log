@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.journal_events_log.Constants
 import com.example.journal_events_log.R
 import com.example.journal_events_log.adapters.JournalAdapter
 import com.example.journal_events_log.models.EventsLog
@@ -18,7 +19,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class fragment_events_editor : Fragment() {
-    var formatDate = SimpleDateFormat("ля ля ля")
+    var formatDate = SimpleDateFormat("dd MMMM YYYY")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -86,7 +87,7 @@ class fragment_events_editor : Fragment() {
         }
 
         saveBtn.setOnClickListener {
-            for(item in events){
+            for(item in Constants.events){
                 if (events.id == item.id){
                     item.name = nameEd.text.toString()
                     item.description1 = description1.text.toString()

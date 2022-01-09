@@ -1,7 +1,9 @@
 package com.example.journal_events_log.fragments
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.DatePickerDialog
+import android.os.Build
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.util.Log
@@ -12,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.journal_events_log.Constants.Companion.counterID
 import com.example.journal_events_log.Constants.Companion.events
@@ -27,7 +30,7 @@ class journal_fragment : Fragment() {
     lateinit var addBtn: FloatingActionButton
     lateinit var recyclerView: RecyclerView
 
-    var formatDate = SimpleDateFormat("ля ля ля")
+    var formatDate = SimpleDateFormat("dd MMMM YYYY")
 
 
     override fun onCreateView(
@@ -82,6 +85,7 @@ class journal_fragment : Fragment() {
 
             datePicker.show()
         }
+        val dialog = alert.create()
 
         tvDateEndEvents.setOnClickListener {
             val getDate = Calendar.getInstance()
@@ -118,7 +122,9 @@ class journal_fragment : Fragment() {
 
             counterID++
             Log.d("@@@@", "Added notes: ${events}")
+            dialog.dismiss()
 
         }
+        dialog.show()
     }
 }
